@@ -309,16 +309,14 @@ label{
   width: 50%; 
 }
 
-.contactButton{
-  margin-left: 40%; 
-  height: 10%; 
-  width: 11%; 
-  margin-top: 2%; 
-  border-radius: 4px; ;
-}
-
 textarea{
   margin: 10 0 0 0px;;
+}
+
+.submitButton {
+  width: 8%; 
+  margin-left: 45%; 
+  margin-top: 2%; 
 }
 
 
