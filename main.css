@@ -1,0 +1,337 @@
+body,
+html {
+  margin-left: 0.15rem;
+  margin-right: 0.15rem; 
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+  min-width: 500px;
+}
+
+/* Navigation Bar */
+.navBar {
+  background-color: #12355B;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.navBar a{
+  float:left; 
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+.navBar a:hover {
+  border-bottom: 1px solid whitesmoke;
+}
+
+
+.myProjects {
+  position: relative; 
+  font-size: 17px; 
+  font-family: 'Times New Roman';
+  margin-top: 30px; 
+  
+}
+
+.aboutme {
+  font-size: 17px; 
+  font-family: 'Times New Roman';
+  margin-top: 30px; 
+}
+
+.contactMe {
+  font-size: 17px; 
+  font-family: 'Times New Roman';
+  margin-top: 30px; 
+}
+
+.navName {
+  font-family: 'Trocchi', serif;
+  font-size: 35px;
+  font-weight: bold; 
+  margin-top: 5px; 
+}
+
+/* ///////////////////////////////// */
+
+/* Short Description */
+
+.name{
+  font-size: 300%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15%;
+  
+}
+
+#paragraph {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 120%;
+  
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding-top: 5%; 
+  background-color: #12355B;
+  color: white;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding-top: 5%; 
+}
+.aboutMerow{
+  margin: 4px;
+  width: 100%;
+  height: 70%;
+}
+
+.scroll-bar{
+  height: 90%; 
+  width: 90%; 
+  margin-left: 5%;
+  overflow-y: auto;
+}
+
+.scroll-bar::-webkit-scrollbar{
+  display: none;
+}
+
+.shortDescription {
+  padding-bottom:40px;
+  text-align: center;
+  display: block;
+  color: #12355B;
+  line-height: 20pt;
+  text-indent: 2%;
+  font-size: 16px;
+}
+
+.question{
+  display:flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* ///////////////////////////////// */
+
+/* Classes */
+
+.MichiganClasses {
+  margin-top: 15%;
+  height: 45%;
+  max-width: inherit;
+  margin-bottom: 10%; 
+}
+
+#classesTitle {
+  justify-content: center;
+  display: flex;
+  margin-top: 6%;
+  font-size: 300%;
+}
+
+.accordian_container {
+  margin-left: 15%; 
+  margin-right: 15%; 
+}
+
+.accordian__button {
+  display: block;
+  justify-content: center;
+  width: 100%; 
+  height: 23%; 
+  padding: 15px;
+  border: solid; 
+  outline: none; 
+  cursor: pointer; 
+  background: #12355B;
+  color: white;
+  text-align: left;
+  transition: 0.2s;
+  font-size: 20px;
+}
+
+.accordian__button::after {
+  content: '\25be';
+  float: right; 
+  transform: scale(1.5);
+}
+
+.accordian__button--active + .accordian__content {display: block}
+
+.accordian__button--active{
+  background:#205a98;
+}
+.accordian__button--active::after{
+ content: '\25b4';
+}
+
+.accordian__content{
+  padding: 0 15px; 
+  font-family: sans-serif; 
+  background:white; 
+
+  display: none; 
+  overflow: auto; 
+}
+
+
+/* ///////////////////////////////// */
+
+/* Extracurriculars */
+
+.name{
+  font-size: 300%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15%;
+  
+}
+
+#paragraph {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 120%;
+  
+}
+
+.column3 {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding-top: 5%; 
+  background-color: white;
+}
+
+.column4 {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding-top: 5%; 
+  background-color: #12355B;
+  color: white;
+}
+.extracurricularRow{
+  margin: 4px;
+  width: 100%;
+  height: 70%;
+  margin-bottom: 10%;
+}
+
+.scroll-bar{
+  height: 90%; 
+  width: 90%; 
+  margin-left: 5%;
+  overflow-y: auto;
+}
+
+.scroll-bar::-webkit-scrollbar{
+  display: none;
+}
+
+.shortDescription {
+  padding-bottom:40px;
+  text-align: center;
+  display: block;
+  color: #12355B;
+  line-height: 20pt;
+  text-indent: 2%;
+  font-size: 16px;
+}
+
+.question{
+  display:flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* ///////////////////////////////// */
+
+/* Footer */
+
+.footer{
+  height: 70%; 
+  background-color: #12355B;
+}
+
+.title{
+  justify-content: center;
+  display: flex;
+  color: white; 
+  font-size: 30px;
+  padding-top: 2%; 
+}
+
+.inputs{
+  margin-right: 10%; 
+  width: 80%; 
+  margin-left: 10%; 
+}
+
+input{
+  width: 90%; 
+  padding: 5px; 
+  margin: 10 0px; 
+}
+
+label{
+  color: white; 
+}
+
+.row1{
+  display: block;
+}
+
+.inputCol1{
+  width: 50%; 
+  float: left; 
+}
+
+.inputCol2{
+  float: right; 
+  width: 50%; 
+}
+
+.contactButton{
+  margin-left: 40%; 
+  height: 10%; 
+  width: 11%; 
+  margin-top: 2%; 
+  border-radius: 4px; ;
+}
+
+textarea{
+  margin: 10 0 0 0px;;
+}
+
+
+
+/* add link to linkdn */
+
+
+
+
+
+
+
+
+
+
+
