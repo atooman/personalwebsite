@@ -3,3 +3,4 @@ document.querySelectorAll('.accordian__button').forEach(button => {
         button.classList.toggle('accordian__button--active');
     })
 }); 
+
