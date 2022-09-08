@@ -4,3 +4,9 @@ document.querySelectorAll('.accordian__button').forEach(button => {
     })
 }); 
 
+document.querySelectorAll('.accordian__button2').forEach(button2 => {
+    button2.addEventListener('click', () => {
+        button2.classList.toggle('accordian__button2--active');
+    })
+}); 
+

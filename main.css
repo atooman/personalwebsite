@@ -35,9 +35,9 @@ html {
 }
 
 .navBar {
-  margin-left: 40%;
+  margin-left: 47%;
   margin-top: 2%;
-  width: 60%; 
+  width: 50%; 
 }
 
 .navBar a{
@@ -54,59 +54,125 @@ html {
 /* ///////////////////////////////// */
 
 /* Short Description */
-
-.name{
-  font-size: 300%;
+.aboutMeWrapper {
+  display: -moz-box; /* Firefox*/
+  display: -webkit-box; /* Chrome */
+  display: -ms-flexbox; /* IE 10 */
+  background-color: #12355B;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  -ms-flex-align: start;
+  height: 100%; 
+  margin-top: 3%; 
 }
 
-.column1 {
-  float: left;
-  width: 40%;
-  height: 100%;
-  padding-top: 2%; 
+.box{
+  width: 33.3333%; 
+  height: 50%; 
 }
 
-.column2 {
-  float: left;
-  width: 50%;
-  height: 100%;
-  padding-top: 5%; 
-  margin-left: 3%;
+.box1 {
+  -webkit-box-ordinal-group: 1; /* iOS 6-, Safari, Opera*/
+  -moz-box-ordinal-group: 1; /* Firefox*/
+  -ms-flex-order: 1; /* IE 10 */
+  -ms-flex-order: 1;
 }
-.aboutMerow{
-  margin: 15% 0% 0% 0%;
+
+.box2 {
+  -webkit-box-ordinal-group: 2; /* iOS 6-, Safari, Opera*/
+  -moz-box-ordinal-group: 2; /* Firefox*/
+  -ms-flex-order: 2; /* IE 10 */
+  -ms-flex-order: 2; 
+}
+
+.box3 {
+  -webkit-box-ordinal-group: 3; /* iOS 6-, Safari, Opera*/
+  -moz-box-ordinal-group: 3; /* Firefox*/
+  -ms-flex-order: 3; /* IE 10 */
+  -ms-flex-order: 3;
+}
+
+.box4 {
+  -webkit-box-ordinal-group: 4; /* iOS 6-, Safari, Opera*/
+  -moz-box-ordinal-group: 4; /* Firefox*/
+  -ms-flex-order: 4; /* IE 10 */
+  -ms-flex-order: 4;
+}
+
+.box5 {
+  -webkit-box-ordinal-group: 5; /* iOS 6-, Safari, Opera*/
+  -moz-box-ordinal-group: 5; /* Firefox*/
+  -ms-flex-order: 5; /* IE 10 */
+  -ms-flex-order: 5;
+}
+
+.box6 {
+  -webkit-box-ordinal-group: 6; /* iOS 6-, Safari, Opera*/
+  -moz-box-ordinal-group: 6; /* Firefox*/
+  -ms-flex-order: 6; /* IE 10 */
+  -ms-flex-order: 6;
+}
+
+@media all and (max-width: 500px){
+
+  .aboutMeWrapper{
+    height: 300%;  
+  }
+  .box {
+    width: 100%;
+    height: 16.667%
+  }
+
+  .box1{
+    margin-top: 13%; 
+  }
+
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px
+}
+
+.flip-card-inner {
+  position: relative;
   width: 100%;
-  height: 90%;
+  height: 100%; 
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-.imageAboutMe{
-  width: 100%; 
-  height: 90%; 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-.scroll-bar{
-  height: 90%; 
-  width: 90%; 
-  margin-left: 5%;
-  overflow-y: auto;
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
   background-color: white;
-}
-
-.scroll-bar::-webkit-scrollbar{
-  display: none;
+  color: black;
+  transform: rotateY(180deg);
 }
 
 .shortDescription {
-  padding-bottom:40px;
+  margin: 0% 8% 0% 8%; 
   text-align: center;
-  display: block;
   line-height: 20pt;
   text-indent: 2%;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .question{
@@ -114,24 +180,35 @@ html {
   justify-content: center;
   font-weight: bold;
   font-size: 24px;
+  margin-top: 4%;
+}
+
+img {
+  width: 100%; 
+  height: 100%; 
 }
 
 /* ///////////////////////////////// */
 
 /* Classes */
 
+@media all and (max-width: 500px){
+
+  #classesTitle{
+    margin-top: 20%; 
+  }
+
+}
+
 .MichiganClasses {
-  margin-top: 8%;
-  height: 100%;
   max-width: inherit; 
   background: white;
-  margin-bottom: 6%; 
 }
 
 #classesTitle {
-  justify-content: center;
+  margin-left: 15%; 
   display: flex;
-  font-size: 300%;
+  font-size: 250%;
 }
 
 .accordian_container {
@@ -183,86 +260,63 @@ html {
 /* Extracurriculars */
 
 .extracurricularName{
-  font-size: 300%;
+  font-size: 250%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5%;
-}
-
-#paragraph {
-  margin-left: 20%;
-  margin-right: 20%;
-  font-size: 120%;
-  
-}
-
-.column3 {
-  float: left;
-  width: 50%;
-  height: 100%;
-  padding-top: 5%; 
-  background-color: white;
-}
-
-.column4 {
-  float: left;
-  width: 50%;
-  height: 100%;
-  padding-top: 5%; 
-  color: white;
-}
-.extracurricularRow{
-  margin: 4px;
-  width: 100%;
-  height: 90%;
-  margin-bottom: 6%;
-}
-
-.scroll-bar{
-  height: 90%; 
-  width: 90%; 
-  margin-left: 5%;
-  overflow-y: auto;
-}
-
-.scroll-bar::-webkit-scrollbar{
-  display: none;
-}
-
-.shortDescription {
-  padding-bottom:40px;
-  text-align: center;
-  display: block;
-  color: #12355B;
-  line-height: 20pt;
-  text-indent: 2%;
-  font-size: 16px;
-}
-
-.question{
-  display:flex;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.columnImage1{
   margin-left: 5%; 
-  width: 90%; 
-  height: 60%;
-  display: inline-block;
-  margin-top: 5%;
 }
 
-.swiper{
+.extracurricularContent{
+  height: 85%; 
   width: 100%; 
-  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  -ms-flex-align: start;
 }
 
+.extracurricularBox{
+  width:25%; 
+  background-color: #12355B;
+  height: 67%; 
+  margin-left: 8%; 
+}
 
-.swiper-slide img{
-  width: 100%; 
+.extraPic{
+  width: 96%;
+  height: 75%; 
+  margin-left: 2%;
+  margin-top: 2%;  
+}
+
+.accordian2 {
+  border: none; 
+  height: 10%; 
+  font-size: 24px;
+  text-align: center;
+}
+
+.content2 {
+  border-bottom: 1px solid #12355B;
+  border-right:  1px solid #12355B;
+  border-left:   1px solid #12355B;
+
+}
+
+.extrabox2{
+  margin-left: 4.5%; 
+}
+
+@media all and (max-width: 500px){
+
+  .extracurricularContent{
+    height: 200%;  
+  }
+  .extracurricularBox {
+    width: 80%;
+    height: 30%;
+    margin-left: 10%;  
+  }
+
 }
 
 
@@ -273,11 +327,11 @@ html {
 .footer{
   height: 70%; 
   background-color: #12355B;
+  margin-top: 3%; 
 }
 
 .title{
-  justify-content: center;
-  display: flex;
+  margin-left: 43%; 
   color: white; 
   font-size: 30px;
   padding-top: 2%; 
