@@ -18,7 +18,7 @@ $( document ).ready(function() {
         var position = `${scroller.scrollTop}`;
         if(position > 115 && position < 231){
             // who am I section
-            document.getElementById("personal_image").src="/images/who_picture.jpg";
+            document.getElementById("personal_image").src="images/who_picture.jpg";
             document.getElementById("background_square").style.backgroundColor = "rgba(239, 239, 208, 1)"; 
             document.getElementById("main_background").style.backgroundColor = "rgba(10, 33, 15, 1)";  
             var buttons = document.getElementsByTagName("button"); 
@@ -31,11 +31,11 @@ $( document ).ready(function() {
         }
         else if(position > 230 && position < 600){
             // why computer science
-           document.getElementById("personal_image").src ="/images/hiking.jpg";
+           document.getElementById("personal_image").src ="images/hiking.jpg";
         }
         else if( position < 951 && position > 620){
             // what am I passionate about
-            document.getElementById("personal_image").src ="/images/family.jpg";
+            document.getElementById("personal_image").src ="images/family.jpg";
             document.getElementById("background_square").style.backgroundColor = "rgba(239, 239, 208, 1)";  
            document.getElementById("main_background").style.backgroundColor = "rgba(10, 33, 15, 1)";  
            var buttons = document.getElementsByTagName("button");
@@ -51,7 +51,7 @@ $( document ).ready(function() {
         ////////////////////////////////////////////////////////////////////////
         else if(position < 1420 && position > 950){
             // Ktp 
-            document.getElementById("personal_image").src="/images/ktp.jpg";
+            document.getElementById("personal_image").src="images/ktp.jpg";
             document.getElementById("main_background").style.backgroundColor = "rgba(197, 224, 179, 1)"; 
             document.getElementById("background_square").style.backgroundColor = "rgba(10, 33, 15, 1)"; 
             var buttons = document.getElementsByTagName("button"); 
@@ -64,10 +64,10 @@ $( document ).ready(function() {
             document.getElementById("two_btn").style.color = "white";
         }
         else if( position > 1400 && position < 1840){
-            document.getElementById("personal_image").src="/images/daily.jpg";
+            document.getElementById("personal_image").src="images/daily.jpg";
         }
         else if( position < 2500 && position > 1840){
-            document.getElementById("personal_image").src="/images/miss.jpg";
+            document.getElementById("personal_image").src="images/miss.jpg";
             document.getElementById("main_background").style.backgroundColor = "rgba(197, 224, 179, 1)"; 
             document.getElementById("background_square").style.backgroundColor = "rgba(10, 33, 15, 1)"; 
             var buttons = document.getElementsByTagName("button"); 
@@ -80,7 +80,7 @@ $( document ).ready(function() {
         }
         // //////////////////////////////////////////////////////////////////////
         else if(position < 2490 && position > 2201){
-            document.getElementById("personal_image").src="/images/dsg.jpeg";
+            document.getElementById("personal_image").src="images/dsg.jpeg";
             document.getElementById("main_background").style.backgroundColor = "rgba(106, 153, 78, 1)"; 
             document.getElementById("background_square").style.backgroundColor = "white"; 
             document.getElementById("three_btn").style.backgroundColor = "white";
@@ -90,7 +90,7 @@ $( document ).ready(function() {
         }
         // //////////////////////////////////////////////////////////////////////
         else if(position > 2500){
-            document.getElementById("personal_image").src="/images/dsg.jpeg";
+            document.getElementById("personal_image").src="images/dsg.jpeg";
             document.getElementById("main_background").style.backgroundColor = "rgba(106, 153, 78, 1)"; 
             document.getElementById("background_square").style.backgroundColor = "white"; 
             document.getElementById("three_btn").style.backgroundColor = "white";
