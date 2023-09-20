@@ -1,0 +1,103 @@
+ Project Section
+                <div id="project_section">
+                  <div> Hello</div>
+                </div>
+
+                <!-- Club Section -->
+                <div id="club_section">
+                  <div id="club_main_square">
+                    <div id="photo_box">
+                      <div id="box-one"><img id="daily_image" src="/images/daily.jpg"  ></div>
+                      <div id="box-two"><img id="ktp_image" src="/images/ktp.jpg"  ></div>
+                      <div id="box-three"><img id="miss_image" src="/images/miss.jpg" ></div>
+                    </div>
+                    <div id="md-title" class="letter-formatting">Michigan Daily</div>
+                    <div class="text" id="md-text">
+                      I have been part of the Michigan Daily web developement team for one semester. 
+                      In that time I worked on creating a new page under the style guide. 
+                      The style guide is an internal site that can be utilized by designers on the 
+                      Michigan Daily team in order to download and reference standard font styles, colors, and formats. 
+                      I worked specifically on creating the page with fonts so that designers can see different fonts 
+                      utilized on the Daily. To create this webpage, I was first given a Figma page which I then recreated
+                      using HTML, CSS, and React elements. 
+                    </div>
+                    <div id="ktp-title" class="letter-formatting">Kappa Theta Pi</div>
+                    <div class="text" id="ktp-text">
+                      Kappa Theta Pi is Michigan's premier professional technology fraternity with members across various disciplines united by a fervor for technology. 
+                      Our fraternity's core revolves around five essential pillars: fostering professional growth, nurturing alumni connections, 
+                      facilitating social expansion, driving technological progress, and providing academic support. Our commitment to these principles is evident through our engagement in project teams, study groups, professional development workshops, and hackathons/design jams. 
+                      This dynamic culture of growth empowers our members to explore tech-related passions while benefiting from steadfast support and encouragement.
+                      Within the organization, I have participated in the ethical, mobile, 
+                      and design committees as well as been part of the team that created a mobile application to streamline the rush process. 
+                    </div>
+                    <div id="msc-title" class="letter-formatting">Miss STEMS Careers</div>
+                    <div class="text" id="msc-text">
+                      Miss Stems Careers is an organization dedicated to sparking early interest in STEM careers among young girls. 
+                      Through semester-long educational programs, the organization aims to address gender gaps in STEM realted fields. 
+                      As part of our efforts, I led the design and execution of a dynamic computer science workshop tailored specifically for middle school girls. 
+                      This workshop was strategically crafted to captivate their curiosity and kindle an early fascination with the world of technology. 
+                      Through interactive activities, hands-on experiences, and engaging discussions, participants were introduced to the captivating possibilities within the technology sector.
+                      By cultivating an environment of creativity and empowerment, Miss STEMS Careers is shaping the future by inspiring the next generation of female technology leaders.
+                    </div>
+                    <div id="line"></div>
+                  </div>
+
+                </div>
+
+                <!-- Resume Section -->
+                <div id="resume_section">
+                  <div id="resume_box"> 
+                    <img src="/images/profile_pic.JPG" alt="profile Pic" id="profile_image">
+                    <div id="download_button">Download resume</div>
+                  </div>
+                  <img src="/images/resume.png" alt="resume Pic" id="resume_image">
+                </div>
+
+                <!-- Contact Section -->
+                <div id="contact_section">
+                  <div class="title" id="contact_title">Contact Me</div>
+                  <img src = "contact_box.svg" id="contact_box"/>
+                  <div id="contact-box-info">
+                    <div class="input_title">Name</div>
+                    <input>
+                    <div class="input_title">Email</div>
+                    <input>
+                    <div class="input_title">Message</div>
+                    <input>
+                  </div>
+                  <button id="contact-button">Submit</button>
+                </div>
+
+
+
+
+
+
+
+                  //set new Page color
+        if(newPage == "about_me"){
+            console.log("about me");
+            currentBackgroundColor = "rgba(10, 33, 15, 1)";
+            $('button').css("color", "white");
+        }
+        else if(newPage == "project"){
+            console.log("project me");
+            currentBackgroundColor = "rgb(168, 202, 145)";
+        }
+        else if(newPage == "club"){
+            console.log("club me");
+            currentBackgroundColor = "rgba(197, 224, 179, 1)";
+            $('button').css("color", "black");
+        }
+        else if(newPage == "resume"){
+            console.log("resume me");
+            currentBackgroundColor = "rgba(114, 140, 98, 0.3)";
+        }
+        else{
+            // contact me
+            console.log("contact me");
+            currentBackgroundColor = "rgba(255, 255, 255, 1)";
+            $('#big_one').css("color", "black");
+            $('button').css("color", "black");
+        }
+        document.getElementById("big_one").style.backgroundColor = currentBackgroundColor; 
