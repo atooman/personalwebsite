@@ -392,4 +392,28 @@ header .titlePage{
 }
 
 /* Work Section */
+.dsg{
+    padding-top: 4%;
+}
+
+#contact_platforms{
+    list-style: none;
+}
+
+.contact_text{
+    color: #07260e;
+}
+
+.contact_button{
+    background-color: white; 
+    border: none;
+}
+
+.contact_section{
+    padding-bottom: 20%;
+}
+
+#dot{
+    padding-top: 40%;
+}
 

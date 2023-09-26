@@ -89,14 +89,39 @@ $( document ).ready(function() {
             document.getElementById("two_btn").style.color = "black";
         }
         // //////////////////////////////////////////////////////////////////////
-        else if(position > 2500){
+        else if( position < 2969 && position > 2500){
             document.getElementById("personal_image").src="images/dsg.jpeg";
-            document.getElementById("main_background").style.backgroundColor = "rgba(106, 153, 78, 1)"; 
+            document.getElementById("main_background").style.backgroundColor = "rgba(7, 38, 14, 0.6)"; 
             document.getElementById("background_square").style.backgroundColor = "white"; 
             document.getElementById("three_btn").style.backgroundColor = "white";
             document.getElementById("three_btn").style.color = "black";
             document.getElementById("two_btn").style.backgroundColor = "transparent";
             document.getElementById("two_btn").style.color = "black";
+            document.getElementById("four_btn").style.backgroundColor = "transparent";
+            document.getElementById("four_btn").style.color = "black";
+        }
+        else if(position < 3329 && position > 2970){
+            document.getElementById("personal_image").src="images/accumtech.jpeg";
+            document.getElementById("main_background").style.backgroundColor = "rgba(7, 38, 14, 0.6)"; 
+            document.getElementById("background_square").style.backgroundColor = "white"; 
+            document.getElementById("three_btn").style.backgroundColor = "white";
+            document.getElementById("three_btn").style.color = "black";
+            document.getElementById("two_btn").style.backgroundColor = "transparent";
+            document.getElementById("two_btn").style.color = "black";
+            document.getElementById("four_btn").style.backgroundColor = "transparent";
+            document.getElementById("four_btn").style.color = "black";
+        }
+        // /////////////////////////////////////////////////////////////////////////////////////////////
+        else if(position > 3300){
+            document.getElementById("main_background").style.backgroundColor = "white"; 
+            document.getElementById("four_btn").style.backgroundColor = "rgba(106, 153, 78, 1)";
+            document.getElementById("one_btn").style.backgroundColor = "transparent";
+            document.getElementById("two_btn").style.backgroundColor = "transparent";
+            document.getElementById("three_btn").style.backgroundColor = "transparent";
+            document.getElementById("one_btn").style.color = "black";
+            document.getElementById("two_btn").style.color = "black";
+            document.getElementById("three_btn").style.color = "black";
+            document.getElementById("personal_image").src="images/me.jpeg";
         }
     });
 
@@ -105,24 +130,78 @@ $( document ).ready(function() {
     const oneButton = document.querySelector("#one_btn");
     oneButton.addEventListener("click", (event) => {
         document.getElementById('about_section').scrollIntoView();
+        document.getElementById("personal_image").src="images/who_picture.jpg";
+            document.getElementById("background_square").style.backgroundColor = "rgba(239, 239, 208, 1)"; 
+            document.getElementById("main_background").style.backgroundColor = "rgba(10, 33, 15, 1)";  
+            var buttons = document.getElementsByTagName("button"); 
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].style.color = "white";
+            }
+            // buttons
+            document.getElementById("one_btn").style.backgroundColor = "rgba(239, 239, 208, 1)";
+            document.getElementById("one_btn").style.color = "black";
+            document.getElementById("two_btn").style.backgroundColor = "transparent";
+            document.getElementById("two_btn").style.color = "white";
+            document.getElementById("three_btn").style.backgroundColor = "transparent";
+            document.getElementById("three_btn").style.color = "white";
+            document.getElementById("four_btn").style.backgroundColor = "transparent";
+            document.getElementById("four_btn").style.color = "white";
+            document.getElementById("four_btn").style.border = "none";
     });
 
 
     const twoButton = document.querySelector("#two_btn");
     twoButton.addEventListener("click", (event) => {
         document.getElementById('club_section').scrollIntoView();
+        document.getElementById("personal_image").src="images/ktp.jpg";
+        document.getElementById("main_background").style.backgroundColor = "rgba(197, 224, 179, 1)"; 
+        document.getElementById("background_square").style.backgroundColor = "rgba(10, 33, 15, 1)"; 
+        var buttons = document.getElementsByTagName("button"); 
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].style.color = "black";
+        }
+        document.getElementById("one_btn").style.backgroundColor = "transparent";
+        document.getElementById("one_btn").style.color = "black";
+        document.getElementById("four_btn").style.backgroundColor = "transparent";
+        document.getElementById("four_btn").style.color = "black";
+        document.getElementById("three_btn").style.backgroundColor = "transparent";
+        document.getElementById("three_btn").style.color = "black";
+        document.getElementById("two_btn").style.backgroundColor = "rgba(10, 33, 15, 1)";
+        document.getElementById("two_btn").style.color = "white";
+        document.getElementById("four_btn").style.border = "none";
     });
 
     const threeButton = document.querySelector("#three_btn");
     threeButton.addEventListener("click", (event) => {
-        var pdfFile = './images/resume.pdf';
-        window.open(pdfFile, '_blank');
+        document.getElementById('work_section').scrollIntoView();
+        document.getElementById("personal_image").src="images/dsg.jpeg";
+        document.getElementById("main_background").style.backgroundColor = "rgba(106, 153, 78, 1)"; 
+        document.getElementById("background_square").style.backgroundColor = "white"; 
+        document.getElementById("three_btn").style.backgroundColor = "white";
+        document.getElementById("three_btn").style.color = "black";
+        document.getElementById("two_btn").style.backgroundColor = "transparent";
+        document.getElementById("two_btn").style.color = "black";
+        document.getElementById("one_btn").style.backgroundColor = "transparent";
+        document.getElementById("one_btn").style.color = "black";
+        document.getElementById("four_btn").style.backgroundColor = "transparent";
+        document.getElementById("four_btn").style.color = "black";
+        document.getElementById("four_btn").style.border = "none";
 
     });
 
     const fourButton = document.querySelector("#four_btn");
     fourButton.addEventListener("click", (event) => {
         document.getElementById('contact_section').scrollIntoView();
+        document.getElementById("personal_image").src="images/me.jpeg";
+        document.getElementById("main_background").style.backgroundColor = "white"; 
+        document.getElementById("four_btn").style.backgroundColor = "rgba(106, 153, 78, 1)";
+        document.getElementById("one_btn").style.backgroundColor = "transparent";
+        document.getElementById("two_btn").style.backgroundColor = "transparent";
+        document.getElementById("three_btn").style.backgroundColor = "transparent";
+        document.getElementById("one_btn").style.color = "black";
+        document.getElementById("two_btn").style.color = "black";
+        document.getElementById("three_btn").style.color = "black";
+        // window.open(pdfFile, '_blank');
     });
 
     $(window).scroll(function() {
