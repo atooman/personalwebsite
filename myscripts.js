@@ -220,11 +220,14 @@ $( document ).ready(function() {
             $('#three_btn').css("display", "block");
             $('#four_btn').css("display", "block");
             $('#line').css("display", "block");
+            document.getElementById("one_btn").style.backgroundColor = "transparent";
+            document.getElementById("two_btn").style.backgroundColor = "transparent";
+            document.getElementById("three_btn").style.backgroundColor = "transparent";
+            document.getElementById("one_btn").style.color = "black";
             var buttons = document.getElementsByTagName("button"); 
             for (var i = 0; i < buttons.length; i++) {
                 buttons[i].style.color = "white";
             }
-            console.log("we got there");
            document.getElementById("main_background").style.backgroundColor = "rgba(10, 33, 15, 1)"; 
            document.getElementsByClassName("button_about_me").style.backgroundColor = "transparent";
         }
